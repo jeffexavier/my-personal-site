@@ -5,7 +5,7 @@ export default function HomeHeader() {
     <section>
       <div>Olá, sou JEFF</div>
       <div>
-        <Image />
+        <Image src="@public/images/avatar" />
       </div>
     </section>
   );
