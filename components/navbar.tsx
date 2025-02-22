@@ -45,7 +45,7 @@ export default function NavbarTop() {
 
   return (
     <Navbar shouldHideOnScroll>
-      <NavbarContent className="hidden sm:flex gap-4" justify="center">
+      <NavbarContent className="flex gap-4" justify="center">
         {menuItems.map((item, index) => (
           <NavbarItem key={index}>
             <Link color={`${item.color}`} href="#">
@@ -54,7 +54,7 @@ export default function NavbarTop() {
           </NavbarItem>
         ))}
       </NavbarContent>
-      <NavbarContent className="hidden sm:flex gap-4" justify="center">
+      <NavbarContent className="flex p-4" justify="center">
         <NavbarItem>
           <Button
             as={Link}
