@@ -24,7 +24,7 @@ export default function HomeHeader() {
             <Button
               as={Link}
               color="warning"
-              href="#"
+              href="#contact_forms"
               startContent={<PhoneIcon width="1em" />}
               variant="solid"
             >
@@ -33,7 +33,7 @@ export default function HomeHeader() {
             <Button
               as={Link}
               color="warning"
-              href="#"
+              href="#contact_forms"
               startContent={<ArrowDownTrayIcon width="1em" />}
               variant="ghost"
             >

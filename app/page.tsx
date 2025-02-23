@@ -3,6 +3,7 @@ import CustomerLogoSection from "@/components/customerLogoSection";
 import HomeHeader from "@/components/homeHeader";
 import ProjectsSection from "@/components/projectsSection";
 import SkillSection from "@/components/skillSection";
+import TalkToMeSection from "@/components/talkToMeSection";
 
 export default function Home() {
   return (
@@ -13,6 +14,7 @@ export default function Home() {
         <CustomerLogoSection />
         <ProjectsSection />
         <SkillSection />
+        <TalkToMeSection />
       </div>
     </>
   );
