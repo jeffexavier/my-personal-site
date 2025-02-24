@@ -33,8 +33,9 @@ export default function HomeHeader() {
             <Button
               as={Link}
               color="warning"
-              href="#contact_forms"
+              href="/files/Jefferson_Xavier_CV_02_2025.pdf"
               startContent={<ArrowDownTrayIcon width="1em" />}
+              target="_blank"
               variant="ghost"
             >
               Baixar Curriculum

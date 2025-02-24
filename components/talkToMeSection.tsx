@@ -21,7 +21,7 @@ export default function TalkToMeSection() {
         </div>
         <div className="flex flex-col gap-4 min-w-[70%]">
           <h1 className="text-3xl font-bold text-secondary">
-            Minhas competências
+            Entre em contato
           </h1>
           <div className="flex flex-col gap-4">
             <Input className="min-w-fit" label="Nome completo" type="text" />
