@@ -9,7 +9,7 @@ export default function TalkToMeSection() {
   return (
     <>
       <div
-        className="flex gap-4 max-w-screen-xl items-center"
+        className="flex gap-4 max-w-screen-xl pb-[210px] items-center"
         id="contact_forms"
       >
         <div className="flex min-w-[30%]">
