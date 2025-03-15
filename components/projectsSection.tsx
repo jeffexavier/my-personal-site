@@ -19,7 +19,7 @@ export default function ProjectsSection() {
 
   return (
     <>
-      <div className="flex gap-4">
+      <div className="flex gap-4" id="projects_section">
         {projects.map((item, index) => (
           <div
             key={index}

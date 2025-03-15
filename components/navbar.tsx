@@ -14,32 +14,39 @@ export default function NavbarTop() {
       | "success"
       | "warning"
       | "danger";
+    href: string;
   }
 
   const menuItems: MenuItens[] = [
     {
       item: "Início",
       color: "foreground",
+      href: "http://localhost:3000/",
     },
     {
       item: "Sobre",
       color: "foreground",
+      href: "#about_section",
     },
     {
       item: "Projetos",
       color: "foreground",
+      href: "#projects_section",
     },
     {
-      item: "Ferramentas",
+      item: "Competências",
       color: "foreground",
+      href: "#skill_section",
     },
     {
       item: "GitHub",
       color: "secondary",
+      href: "https://github.com/jeffexavier",
     },
     {
       item: "Linkedin",
       color: "secondary",
+      href: "https://www.linkedin.com/in/jeffexavier/",
     },
   ];
 
@@ -48,7 +55,7 @@ export default function NavbarTop() {
       <NavbarContent className="flex gap-4" justify="center">
         {menuItems.map((item, index) => (
           <NavbarItem key={index}>
-            <Link color={`${item.color}`} href="#">
+            <Link color={`${item.color}`} href={item.href}>
               {item.item}
             </Link>
           </NavbarItem>
@@ -59,7 +66,7 @@ export default function NavbarTop() {
           <Button
             as={Link}
             color="warning"
-            href="#"
+            href="#contact_forms"
             startContent={<PhoneIcon width="1em" />}
             variant="ghost"
           >

@@ -7,7 +7,7 @@ import { PhoneIcon } from "./icons";
 export default function AboutSection() {
   return (
     <>
-      <div className="flex gap-4 justify-around">
+      <div id="about_section" className="flex gap-4 justify-around">
         <Image alt="teste" src="/images/avatar/avatar_oi.png" />
         <div className="flex flex-col justify-center gap-4 max-w-screen-md">
           <div className="flex flex-col gap-2">
