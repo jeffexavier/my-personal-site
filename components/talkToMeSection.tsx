@@ -1,9 +1,6 @@
 import { Image } from "@heroui/image";
-import { Input, Textarea } from "@heroui/input";
-import { Button } from "@heroui/button";
-import { Link } from "@heroui/link";
 
-import { PhoneIcon } from "./icons";
+import TalkToMeForms from "./talkToMeForms";
 
 export default function TalkToMeSection() {
   return (
@@ -23,22 +20,7 @@ export default function TalkToMeSection() {
           <h1 className="text-3xl font-bold text-secondary">
             Entre em contato
           </h1>
-          <div className="flex flex-col gap-4">
-            <Input className="min-w-fit" label="Nome completo" type="text" />
-            <Input label="Seu melhor e-mail" type="email" />
-            <Input label="WhatsApp" type="tel" />
-            <Textarea label="Escreva sua mensagem aqui..." />
-          </div>
-
-          <Button
-            as={Link}
-            color="warning"
-            href="#"
-            startContent={<PhoneIcon width="1em" />}
-            variant="solid"
-          >
-            Entre em contato
-          </Button>
+          <TalkToMeForms />
         </div>
       </div>
     </>
