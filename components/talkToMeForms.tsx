@@ -14,16 +14,13 @@ export default function TalkToMeForms() {
   }
 
   async function sendData() {
-    const sendRequest = await fetch(
-      "https://n8n.jeffersonxavier.com.br/webhook/5344e5a9-b550-4eff-a019-0a81de8c961b",
-      {
-        method: "POST",
-        headers: {
-          "Content-Type": "application/json",
-        },
-        body: JSON.stringify(formData),
+    const sendRequest = await fetch("url", {
+      method: "POST",
+      headers: {
+        "Content-Type": "application/json",
       },
-    );
+      body: JSON.stringify(formData),
+    });
   }
 
   return (
