@@ -12,7 +12,7 @@ export default function HomeHeader() {
         <div className="flex flex-col gap-8 justify-center max-w-screen-sm">
           <div className="flex flex-col gap-4">
             <p className="text-secondary text-xl">Olá, sou 👋🏻</p>
-            <h1 className="text-foreground-900 font-bold text-5xl">
+            <h1 className="font-bold text-5xl text-gray-50">
               Jefferson Xavier
             </h1>
             <p className="text-secondary text-xl">

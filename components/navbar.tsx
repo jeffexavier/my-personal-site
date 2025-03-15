@@ -58,7 +58,7 @@ export default function NavbarTop() {
   ];
 
   return (
-    <Navbar shouldHideOnScroll>
+    <Navbar shouldHideOnScroll className="bg-transparent">
       <NavbarContent className="flex gap-4" justify="center">
         {menuItems.map((item, index) => (
           <NavbarItem key={index}>
