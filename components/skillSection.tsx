@@ -24,7 +24,7 @@ export default function SkillSection() {
 
   return (
     <>
-      <div className="flex flex-col gap-10">
+      <div className="flex flex-col gap-10" id="skill_section">
         <h1 className="text-3xl font-bold text-secondary text-center">
           Minhas competências
         </h1>
