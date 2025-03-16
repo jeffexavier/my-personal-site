@@ -15,7 +15,7 @@ export default function TalkToMeForms() {
 
   async function sendData() {
     const sendRequest = await fetch(
-      `${process.env.NEXT_PUBLIC_WEBHOOK_FORM_N8N_PROD}`,
+      `${process.env.NEXT_PUBLIC_WEBHOOK_FORM_N8N}`,
       {
         method: "POST",
         headers: {
