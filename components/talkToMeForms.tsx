@@ -14,13 +14,20 @@ export default function TalkToMeForms() {
   }
 
   async function sendData() {
-    const sendRequest = await fetch("url", {
-      method: "POST",
-      headers: {
-        "Content-Type": "application/json",
+    const sendRequest = await fetch(
+      `${process.env.NEXT_PUBLIC_WEBHOOK_FORM_N8N}`,
+      {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify(formData),
       },
-      body: JSON.stringify(formData),
-    });
+    )
+      .then((res) => res.json())
+      .catch((err) => err);
+
+    console.log(await sendRequest);
   }
 
   return (

@@ -23,10 +23,10 @@ export default function ProjectsSection() {
         {projects.map((item, index) => (
           <div
             key={index}
-            className="flex flex-col bg-secondary-50 rounded-lg p-8 gap-4"
+            className="flex flex-col bg-purple-950/50 rounded-lg p-8 gap-4"
           >
             <h1 className="text-3xl font-bold text-secondary">{item.title}</h1>
-            <p className="text-justify ">{item.decription}</p>
+            <p className="text-justify text-gray-50">{item.decription}</p>
           </div>
         ))}
       </div>

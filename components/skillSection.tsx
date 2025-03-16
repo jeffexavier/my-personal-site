@@ -31,7 +31,7 @@ export default function SkillSection() {
         <div className="grid grid-cols-2 gap-4">
           {skills.map((item, index) => (
             <div key={index}>
-              <p className="text-justify">{item.title}</p>
+              <p className="text-justify text-gray-50">{item.title}</p>
               <Progress
                 aria-label="Loading..."
                 color="secondary"

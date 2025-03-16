@@ -8,8 +8,8 @@ export default function NavbarTop() {
   interface MenuItens {
     item: string;
     color:
-      | "primary"
-      | "secondary"
+      | "text-gray-50"
+      | "text-secondary"
       | "foreground"
       | "success"
       | "warning"
@@ -21,48 +21,48 @@ export default function NavbarTop() {
   const menuItems: MenuItens[] = [
     {
       item: "Início",
-      color: "foreground",
+      color: "text-gray-50",
       href: "http://localhost:3000/",
       target: "_self",
     },
     {
       item: "Sobre",
-      color: "foreground",
+      color: "text-gray-50",
       href: "#about_section",
       target: "_self",
     },
     {
       item: "Projetos",
-      color: "foreground",
+      color: "text-gray-50",
       href: "#projects_section",
       target: "_self",
     },
     {
       item: "Competências",
-      color: "foreground",
+      color: "text-gray-50",
       href: "#skill_section",
       target: "_self",
     },
     {
       item: "GitHub",
-      color: "secondary",
+      color: "text-secondary",
       href: "https://github.com/jeffexavier",
       target: "_blank",
     },
     {
       item: "Linkedin",
-      color: "secondary",
+      color: "text-secondary",
       href: "https://www.linkedin.com/in/jeffexavier/",
       target: "_blank",
     },
   ];
 
   return (
-    <Navbar shouldHideOnScroll>
+    <Navbar shouldHideOnScroll className="bg-black/80">
       <NavbarContent className="flex gap-4" justify="center">
         {menuItems.map((item, index) => (
           <NavbarItem key={index}>
-            <Link color={`${item.color}`} href={item.href} target={item.target}>
+            <Link className={item.color} href={item.href} target={item.target}>
               {item.item}
             </Link>
           </NavbarItem>

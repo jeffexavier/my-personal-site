@@ -6,7 +6,7 @@ export default function FooterSection() {
         orientation="horizontal"
       /> */}
       <div className="flex justify-center p-[30px]">
-        <div className="text-sm">
+        <div className="text-sm text-gray-50">
           Site desenvolvido em Next.js com TypeScript por Jefferson Xavier
           &copy; 2025
         </div>
