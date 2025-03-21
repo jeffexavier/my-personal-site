@@ -1,25 +1,25 @@
 import { Divider } from "@heroui/divider";
 
 export default function ResumeHeader() {
-  interface ResumeItems {
-    time: string;
-    description: string;
-  }
+  // interface ResumeItems {
+  //   time: string;
+  //   description: string;
+  // }
 
-  const resumeItems: ResumeItems[] = [
-    {
-      time: "5+",
-      description: "Anos de experiência",
-    },
-    {
-      time: "500+",
-      description: "Histórias de usuário escritas",
-    },
-    {
-      time: "10+",
-      description: "Projetos de integração de sistemas documentados",
-    },
-  ];
+  // const resumeItems: ResumeItems[] = [
+  //   {
+  //     time: "5+",
+  //     description: "Anos de experiência",
+  //   },
+  //   {
+  //     time: "500+",
+  //     description: "Histórias de usuário escritas",
+  //   },
+  //   {
+  //     time: "10+",
+  //     description: "Projetos de integração de sistemas documentados",
+  //   },
+  // ];
 
   return (
     <>
