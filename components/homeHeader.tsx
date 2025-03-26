@@ -9,18 +9,18 @@ export default function HomeHeader() {
   return (
     <section className="flex flex-col justify-between gap-8">
       <div className="flex justify-between gap-8">
-        <div className="flex flex-col gap-8 justify-center max-w-screen-sm">
+        <div className="flex flex-col gap-8 justify-center max-w-[550px]">
           <div className="flex flex-col gap-4">
             <p className="text-secondary text-xl">Olá, sou 👋🏻</p>
             <h1 className="font-bold text-5xl text-gray-50">
               Jefferson Xavier
             </h1>
             <p className="text-secondary text-xl">
-              Ajudo times com processos e tecnologia a<br /> realizarem entregas
-              de alto valor, rápido e escalável!
+              Ajudo times com processos e tecnologia a realizarem entregas de
+              alto valor, rápido e escalável!
             </p>
           </div>
-          <div className="flex gap-2">
+          <div className="flex gap-4 justify-start">
             <Button
               as={Link}
               color="warning"
@@ -42,7 +42,7 @@ export default function HomeHeader() {
             </Button>
           </div>
         </div>
-        <div>
+        <div className="hidden sm:flex">
           <Image alt="teste" src="/images/avatar/avatar_pc.png" />
         </div>
       </div>

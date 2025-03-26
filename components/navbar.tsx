@@ -1,4 +1,11 @@
-import { Navbar, NavbarContent, NavbarItem } from "@heroui/navbar";
+import {
+  Navbar,
+  NavbarContent,
+  NavbarItem,
+  NavbarMenuItem,
+  NavbarMenu,
+  NavbarMenuToggle,
+} from "@heroui/navbar";
 import { Link } from "@heroui/link";
 import { Button } from "@heroui/button";
 
@@ -58,8 +65,11 @@ export default function NavbarTop() {
   ];
 
   return (
-    <Navbar shouldHideOnScroll className="bg-black/80">
-      <NavbarContent className="flex gap-4" justify="center">
+    <Navbar shouldHideOnScroll className="bg-black/80 w-full">
+      <NavbarContent className="sm:hidden w-full">
+        <NavbarMenuToggle />
+      </NavbarContent>
+      <NavbarContent className="hidden sm:flex gap-4" justify="center">
         {menuItems.map((item, index) => (
           <NavbarItem key={index}>
             <Link className={item.color} href={item.href} target={item.target}>
@@ -81,6 +91,19 @@ export default function NavbarTop() {
           </Button>
         </NavbarItem>
       </NavbarContent>
+      <NavbarMenu className="flex p-4 w-full">
+        {menuItems.map((item, index) => (
+          <NavbarMenuItem key={index} className="w-full">
+            <Link
+              className={`${item.color} w-full`}
+              href={item.href}
+              target={item.target}
+            >
+              {item.item}
+            </Link>
+          </NavbarMenuItem>
+        ))}
+      </NavbarMenu>
     </Navbar>
   );
 }

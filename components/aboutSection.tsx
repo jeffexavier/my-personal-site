@@ -7,10 +7,14 @@ import { PhoneIcon } from "./icons";
 export default function AboutSection() {
   return (
     <>
-      <div className="flex gap-4 justify-around" id="about_section">
-        <Image alt="teste" src="/images/avatar/avatar_oi.png" />
+      <div className="flex sm:gap-4 justify-around" id="about_section">
+        <Image
+          alt="teste"
+          className="hidden sm:flex"
+          src="/images/avatar/avatar_oi.png"
+        />
         <div className="flex flex-col justify-center gap-4 max-w-screen-md">
-          <div className="flex flex-col gap-2">
+          <div className="flex flex-col gap-2 max-w-">
             <h1 className="text-3xl font-bold text-secondary">Sobre mim</h1>
             <p className="text-justify text-gray-50">
               Especialista em Growth, Gestão de Produtos, Análise de Negócios e
